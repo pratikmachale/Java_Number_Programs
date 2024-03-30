@@ -1,0 +1,27 @@
+class EvenOddRange 
+{
+	public static void main(String[] args) 
+	{
+		int start = 1;
+		int end = 100;
+		System.out.println("the even number between 1 to 100 is");
+		while(start<=end)
+		{
+			if(start%2 == 0)
+			{
+				System.out.println(start);
+			}
+			start ++;
+	}
+		System.out.println("the Odd number between 1 to 100 is");
+		 start=1;
+		while(start<=end)
+			{
+				if(start%2 != 0)
+					{
+						System.out.println(start);
+					}
+				start++ ;
+			}
+}
+}

@@ -1,0 +1,39 @@
+import java.util.*;
+class BinToDec
+{
+	
+	public static void main(String[] args) 
+	{
+		Scanner sc =new Scanner(System.in);
+		System.out.println("enter binary value that you want to convert into dec");
+		int num = sc.nextInt();
+		int ans = convertDec(num);
+		System.out.println(ans);
+	}
+
+	public static int convertDec(int num)
+	{
+		int sum=0;
+
+		for (int i=0;num!=0 ; )
+		
+		{
+			int last = num%10 ;
+			sum=sum+(last*power(2,i));
+			i++;
+			num/=10;
+			
+
+		} return sum;
+	}
+	public static int power(int base ,int expo )
+	{
+		int pow=1;
+		for (int j=0;j<expo ;j++ )
+		{
+			pow=pow*base;
+		} 
+		return pow ;
+	}
+
+}
